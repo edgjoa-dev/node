@@ -20,6 +20,9 @@ class Server {
         //CORS
         this.app.use(cors())
 
+        //Body Parser lectura y parseo de body
+        this.app.use(express.json());
+
         //Directorio carpeta public
         this.app.use(express.static('public'));
 

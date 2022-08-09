@@ -6,7 +6,7 @@ const router = Router();
 
 router.get('/', userGet)
 
-router.put('/', putUser)
+router.put('/:id', putUser)
 
 router.post('/', postUser)
 
